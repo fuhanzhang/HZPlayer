@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HZPlayer.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,24 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+//    NSString*urlPath = @"http://image.zhimabaobao.com/upload/quan/2017/08/24/d19eb5e00bb74c3ca3c566545a2a3ca6.mp4";
+    NSString*urlPath = @"http://image.zhimabaobao.com/upload/quan/2017/07/23/8f934d5e30f14166b791550daf269fa0.mp4";
+    
+    NSArray*arr = [urlPath componentsSeparatedByString:@"/"];
+    
+    NSString*documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString*savePath = [NSString stringWithFormat:@"%@/%@",documentPath,[arr lastObject]];
+    
+    HZPlayer*player = [[HZPlayer alloc]initWithFrame:self.view.bounds urlPath:urlPath savePath:savePath];
+    [self.view addSubview:player];
+    
+}
 
 @end

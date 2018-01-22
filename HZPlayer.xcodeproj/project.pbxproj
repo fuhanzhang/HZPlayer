@@ -15,6 +15,9 @@
 		D572D0F81F4FB592001AC08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D572D0F61F4FB592001AC08E /* LaunchScreen.storyboard */; };
 		D572D1031F4FB593001AC08E /* HZPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D572D1021F4FB593001AC08E /* HZPlayerTests.m */; };
 		D572D10E1F4FB593001AC08E /* HZPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D572D10D1F4FB593001AC08E /* HZPlayerUITests.m */; };
+		D572D11E1F4FB5D5001AC08E /* HZPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D572D11D1F4FB5D5001AC08E /* HZPlayer.m */; };
+		D572D1211F4FF583001AC08E /* playBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D572D11F1F4FF583001AC08E /* playBtn@3x.png */; };
+		D572D1221F4FF583001AC08E /* playBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D572D1201F4FF583001AC08E /* playBtn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		D572D1091F4FB593001AC08E /* HZPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HZPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D572D10D1F4FB593001AC08E /* HZPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZPlayerUITests.m; sourceTree = "<group>"; };
 		D572D10F1F4FB593001AC08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D572D11C1F4FB5D5001AC08E /* HZPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPlayer.h; sourceTree = "<group>"; };
+		D572D11D1F4FB5D5001AC08E /* HZPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPlayer.m; sourceTree = "<group>"; };
+		D572D11F1F4FF583001AC08E /* playBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playBtn@3x.png"; sourceTree = "<group>"; };
+		D572D1201F4FF583001AC08E /* playBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playBtn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,7 @@
 				D572D0EC1F4FB592001AC08E /* AppDelegate.m */,
 				D572D0EE1F4FB592001AC08E /* ViewController.h */,
 				D572D0EF1F4FB592001AC08E /* ViewController.m */,
+				D572D11B1F4FB5B0001AC08E /* HZPlayer */,
 				D572D0F11F4FB592001AC08E /* Main.storyboard */,
 				D572D0F41F4FB592001AC08E /* Assets.xcassets */,
 				D572D0F61F4FB592001AC08E /* LaunchScreen.storyboard */,
@@ -138,6 +146,17 @@
 				D572D10F1F4FB593001AC08E /* Info.plist */,
 			);
 			path = HZPlayerUITests;
+			sourceTree = "<group>";
+		};
+		D572D11B1F4FB5B0001AC08E /* HZPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D572D11F1F4FF583001AC08E /* playBtn@3x.png */,
+				D572D1201F4FF583001AC08E /* playBtn@2x.png */,
+				D572D11C1F4FB5D5001AC08E /* HZPlayer.h */,
+				D572D11D1F4FB5D5001AC08E /* HZPlayer.m */,
+			);
+			path = HZPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D572D0F81F4FB592001AC08E /* LaunchScreen.storyboard in Resources */,
+				D572D1221F4FF583001AC08E /* playBtn@2x.png in Resources */,
 				D572D0F51F4FB592001AC08E /* Assets.xcassets in Resources */,
+				D572D1211F4FF583001AC08E /* playBtn@3x.png in Resources */,
 				D572D0F31F4FB592001AC08E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D572D11E1F4FB5D5001AC08E /* HZPlayer.m in Sources */,
 				D572D0F01F4FB592001AC08E /* ViewController.m in Sources */,
 				D572D0ED1F4FB592001AC08E /* AppDelegate.m in Sources */,
 				D572D0EA1F4FB592001AC08E /* main.m in Sources */,
@@ -431,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C74GJQS7VJ;
 				INFOPLIST_FILE = HZPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fuhanzhang.HZPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C74GJQS7VJ;
 				INFOPLIST_FILE = HZPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fuhanzhang.HZPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
